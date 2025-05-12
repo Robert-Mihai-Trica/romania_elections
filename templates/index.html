@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula Candidatului Ideal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Formula Candidatului Ideal</h1>
+        <form action="/rezultat" method="POST" class="mt-4">
+            <h3>Candidat 1</h3>
+            <div class="mb-3">
+                <label for="nume1" class="form-label">Nume candidat 1</label>
+                <input type="text" class="form-control" id="nume1" name="nume1" required>
+            </div>
+            <div class="mb-3">
+                <label for="experienta1" class="form-label">Experiență (0-10)</label>
+                <input type="number" class="form-control" id="experienta1" name="experienta1" min="0" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="transparenta1" class="form-label">Transparență (0-10)</label>
+                <input type="number" class="form-control" id="transparenta1" name="transparenta1" min="0" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="sprijin1" class="form-label">Sprijin public (0-10)</label>
+                <input type="number" class="form-control" id="sprijin1" name="sprijin1" min="0" max="10" required>
+            </div>
+
+            <h3>Candidat 2</h3>
+            <div class="mb-3">
+                <label for="nume2" class="form-label">Nume candidat 2</label>
+                <input type="text" class="form-control" id="nume2" name="nume2" required>
+            </div>
+            <div class="mb-3">
+                <label for="experienta2" class="form-label">Experiență (0-10)</label>
+                <input type="number" class="form-control" id="experienta2" name="experienta2" min="0" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="transparenta2" class="form-label">Transparență (0-10)</label>
+                <input type="number" class="form-control" id="transparenta2" name="transparenta2" min="0" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="sprijin2" class="form-label">Sprijin public (0-10)</label>
+                <input type="number" class="form-control" id="sprijin2" name="sprijin2" min="0" max="10" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Calculează</button>
+        </form>
+    </div>
+</body>
+</html>
